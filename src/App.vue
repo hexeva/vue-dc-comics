@@ -26,21 +26,10 @@ export default {
 
 <style lang="scss">
 @import './style/general.scss';
-// *{
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
-// img{
-//   width: 100%;
-// }
-// .container{
-//   width: 70%;
-//   margin: auto;
-//   height:100%;
-//   /* test */
-//   background-color: antiquewhite;
-// }
+@import './style/common.scss';
+
+
+
   
 
 </style>
