@@ -1,10 +1,17 @@
 <template>
   <div id="app">
-    <div class="container">
+    <div>
       <Header />
 
-      <main>Qui ci sarà il main</main>
+      <main>
+        <div class="container">
+          CONTENT GOES HERE
+        </div>
+      </main>
+      <Section />
+
     </div>
+
     
     
     
@@ -14,11 +21,13 @@
 <script>
 
 import Header from "./components/Header.vue";
+import Section from "./components/Section.vue";
 
 export default {
   name: "App",
   components: {
     Header,
+    Section,
     
   },
 };
@@ -27,6 +36,8 @@ export default {
 <style lang="scss">
 @import './style/general.scss';
 @import './style/common.scss';
+
+
 
 
 

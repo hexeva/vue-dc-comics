@@ -1,6 +1,7 @@
 <template>
     <header>
-        <div class="menu-container">
+
+        <div class="container">
             <div class="left-col">
                 <div class="logo">
                     <img src="../assets/img/dc-logo.png" alt="logo dc">
@@ -9,36 +10,10 @@
             </div>
             <div class="right-col">
                 <ul>
-                    <li>
-                        <a href="#">characters</a>
+                    <li v-for="(link,index) in links" :key="index">
+                        <a :class="{active: link.current}" :href="link.url">{{link.text}}</a>
                     </li>
-                    <li>
-                        <a href="#">Comics</a>
-                    </li>
-                    <li>
-                        <a href="#">Movies</a>
-                    </li>
-                    <li>
-                        <a href="#">tv</a>
-                    </li>
-                    <li>
-                        <a href="#">games</a>
-                    </li>
-                    <li>
-                        <a href="#">Prova</a>
-                    </li>
-                    <li>
-                        <a href="#">Prova</a>
-                    </li>
-                    <li>
-                        <a href="#">Prova</a>
-                    </li>
-                    <li>
-                        <a href="#">Prova</a>
-                    </li>
-                    <li>
-                        <a href="#">Prova</a>
-                    </li>
+                   
 
                     
 
@@ -64,7 +39,7 @@
                        {
                         text:'comics',
                         url:'#',
-                        current:false,
+                        current:true,
                     },
                        {
                         text:'movies',
@@ -127,7 +102,9 @@
         height: 120px;
         line-height: 120px;
         font-weight: bold;
+        text-transform: uppercase;
         color:$brand_primary_color;
+        margin-bottom: 5px;
        
         
 
@@ -147,6 +124,11 @@
              ul li{
             display: inline-block;
             margin-right: 30px;
+                a {
+                    display: inline-block;
+                   
+
+                }
             }
 
         }
@@ -161,6 +143,11 @@
         img{
             vertical-align: middle;
         }
+    }
+
+    .active{
+        border-bottom: 5px solid $brand_hover_color;
+        color:$brand_hover_color
     }
    
     
