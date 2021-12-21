@@ -106,8 +106,10 @@
                     </div>
 
                     <!-- end links sections -->
-                    <div class="dc_logo"></div>
-                </div>
+                    <div class="dc_logo">
+                        <img src="../assets/img/dc-logo-bg.png" alt="">
+                    </div>
+            </div>
                 <!-- end container -->
                 
         </div>
@@ -137,26 +139,49 @@ footer {
         .footer-top{
             background-image: url(../assets/img/footer-bg.jpg);
             @include background_general;
+
+            .container{
+                    display: flex;
+                    position: relative;
+
+                        .links-section{
+                            width: 60%;
+                            padding: 35px 0;
+                            display: flex;
+
+                            .links{
+                                margin-right:30px;
+
+                                li{
+                                margin: 8px 0;
+                                a{
+                                    color:$brand_footer_color;
+                                }
+                            }
+
+                            }
+                            
+                        }
+
+                        .dc_logo{
+                            width: 40%;
+                            position: absolute;
+                            top:-29%;
+                            right: 0;
+                        }
+
+
+                }
+                // end container
+
+            
            
 
-            .links-section{
-                width: 50%;
-                padding: 35px 0;
-                display: flex;
-                .links{
-                    margin-right:30px;
-
-                    li{
-                    margin: 8px 0;
-                    a{
-                        color:$brand_footer_color;
-                    }
-                }
-
-                }
-                
-            }
+           
         }
+        // end footer top
+
+        
 
         
     
