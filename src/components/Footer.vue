@@ -113,14 +113,23 @@
                 <!-- end container -->
                 
         </div>
+        <!-- END FOOTER TOP -->
+
+        <FooterBottom />
           
           
     </footer>
 </template>
 
 <script>
+
+import FooterBottom from "./FooterBottom.vue";
+
     export default{
         name:'Footer',
+        components:{
+            FooterBottom,
+        },
 
 }
 </script>
@@ -139,6 +148,7 @@ footer {
         .footer-top{
             background-image: url(../assets/img/footer-bg.jpg);
             @include background_general;
+            overflow: hidden;
 
             .container{
                     display: flex;
