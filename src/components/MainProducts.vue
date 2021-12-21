@@ -7,6 +7,19 @@
             </div>
             <div class="product-list">
                 <!-- QUI CI ANDRANNO I SINGOLI COMPONENTI -->
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+
             </div>
         </div>
     </section>
@@ -14,8 +27,16 @@
 </template>
 
 <script>
+
+import SingleProduct from "./SingleProduct.vue";
+
 export default {
     name:'MainProducts',
+    components: {
+        SingleProduct,
+    
+  },
+
 
     data:function(){
         return{
@@ -106,6 +127,7 @@ export default {
 @import '../style/variables.scss';
 
 
+
 .container{
     width: 75%;
     height: 100%;
@@ -116,12 +138,12 @@ export default {
         a{
             color: inherit;
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 25px;
             font-weight: bold;
             background-color:$brand_hover_color;
             padding: 13px 28px;
             position: absolute;
-            top: -5%;
+            top: -4%;
 
         }
         
@@ -130,8 +152,9 @@ export default {
         .product-list{
         width: 100%;
         padding: 30px 0;
-        // test
-        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        
 
     }
 }
