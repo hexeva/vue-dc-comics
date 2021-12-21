@@ -1,21 +1,23 @@
 <template>
     <div class="product">
         <div class="product-img">
-            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
+            <img :src="SingleObject.thumb" :alt="SingleObject.type">
         </div>
         <div class="product-title">
-            Prova
+            <h3>{{SingleObject.series}}</h3>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name:'SingleProduct'
+    name:'SingleProduct',
+    props:['SingleObject'],
 }
 </script>
 
 <style lang="scss"  scoped>
+@import '../style/variables.scss';;
 
 .product{
     width:calc( (100% / 6) - 20px);

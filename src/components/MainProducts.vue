@@ -7,18 +7,8 @@
             </div>
             <div class="product-list">
                 <!-- QUI CI ANDRANNO I SINGOLI COMPONENTI -->
-                <SingleProduct />
-                <SingleProduct />
-                <SingleProduct />
-                <SingleProduct />
-                <SingleProduct />
-                <SingleProduct />
-                <SingleProduct />
-                <SingleProduct />
-                <SingleProduct />
-                <SingleProduct />
-                <SingleProduct />
-                <SingleProduct />
+                <SingleProduct v-for="(product,index) in products" :key="index" :SingleObject="product" />
+                
 
             </div>
         </div>
