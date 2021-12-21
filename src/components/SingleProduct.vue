@@ -35,6 +35,7 @@ export default {
     .product-title{
         text-transform: uppercase;
         
+        
 
     }
 
