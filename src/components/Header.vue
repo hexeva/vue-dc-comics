@@ -110,16 +110,18 @@
 
           .left-col{
         height: 100%;
-        width: 40%;
+        width: 30%;
         float: left;
         
         
         }
     
      .right-col{
-        width: 60%;
+        width: 70%;
+        min-width:400px;
         height: 100%;
         float: left; 
+        text-align: right;
 
              ul li{
             display: inline-block;

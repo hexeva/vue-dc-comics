@@ -61,7 +61,6 @@ export default{
 
 section{
     width: 100%;
-    // test
     height: 160px;
     background-color: $brand_hover_color;
     color: white;

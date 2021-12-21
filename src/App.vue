@@ -10,6 +10,8 @@
       </main>
       <Section />
 
+      <Footer />
+
     </div>
 
     
@@ -22,12 +24,15 @@
 
 import Header from "./components/Header.vue";
 import Section from "./components/Section.vue";
+import Footer from "./components/Footer.vue";
+
 
 export default {
   name: "App",
   components: {
     Header,
     Section,
+    Footer,
     
   },
 };
