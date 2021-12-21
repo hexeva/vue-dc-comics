@@ -107,7 +107,7 @@
 
                     <!-- end links sections -->
                     <div class="dc_logo">
-                        <img src="../assets/img/dc-logo-bg.png" alt="">
+                        <img src="../assets/img/dc-logo-bg.png" alt="dc logo">
                     </div>
             </div>
                 <!-- end container -->
