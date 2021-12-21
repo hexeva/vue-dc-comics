@@ -104,7 +104,6 @@
         font-weight: bold;
         text-transform: uppercase;
         color:$brand_primary_color;
-        margin-bottom: 5px;
        
         
 
@@ -128,6 +127,14 @@
             margin-right: 30px;
                 a {
                     display: inline-block;
+                    line-height: 110px;
+
+                    &.active{
+        border-bottom: 5px solid $brand_hover_color;
+        color:$brand_hover_color
+    }
+                        
+                    
                    
 
                 }
@@ -147,10 +154,7 @@
         }
     }
 
-    .active{
-        border-bottom: 5px solid $brand_hover_color;
-        color:$brand_hover_color
-    }
+    
    
     
 </style>

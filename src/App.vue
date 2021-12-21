@@ -4,11 +4,14 @@
       <Header />
 
       <main>
-        <div class="container">
-          CONTENT GOES HERE
-        </div>
+        <div class="main-jumbotron"></div>
+        <MainProducts />
+
       </main>
-      <Section />
+
+
+          <Section />
+
 
       <Footer />
 
@@ -25,13 +28,15 @@
 import Header from "./components/Header.vue";
 import Section from "./components/Section.vue";
 import Footer from "./components/Footer.vue";
-
+import MainProducts from "./components/MainProducts.vue"
+;
 
 export default {
   name: "App",
   components: {
     Header,
     Section,
+    MainProducts,
     Footer,
     
   },
@@ -41,6 +46,18 @@ export default {
 <style lang="scss">
 @import './style/general.scss';
 @import './style/common.scss';
+@import './style/mixins.scss';
+
+// MAIN
+
+
+.main-jumbotron{
+  width: 100%;
+  height: 385px;
+  background-image: url(../src/assets/img/jumbotron.jpg);
+  @include background_general;
+
+}
 
 
 

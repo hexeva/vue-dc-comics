@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+@import './mixins.scss';
+
 
 *{
     padding: 0;
@@ -23,9 +25,8 @@ img{
 
 main{
     width: 100%;
-    // test
-    height: 150px;
-    background-color:#1c1c1c ;
     color: white;
+    background-color: #1c1c1c;
+    
 }
 
