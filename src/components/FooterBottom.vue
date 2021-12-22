@@ -55,6 +55,15 @@ section{
             height: 100%;
             display: flex;
             align-items: center;
+
+                 a{
+                    font-size: 20px;
+                    color:$brand_secondary_color;
+                    background-color: darken($brand_footer_color, 30%);
+                    border: 2px solid $brand_hover_color;
+                    padding:13px 22px;
+                }
+   
         }
         .links{
             width: 50%;
@@ -69,15 +78,13 @@ section{
                     margin: 0 20px;
                     a{
                         color: $brand_hover_color;
+                        font-size: 20px;
                     }
                 }
             }
         }
     }
     // end container
-    a{
-        font-size: 25px;
-    }
    
 }
 
